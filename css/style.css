@@ -1,0 +1,828 @@
+/*
+ * Fox by FreeHTML5.co
+ * Twitter: https://twitter.com/fh5co
+ * Facebook: https://fb.com/fh5co
+ * URL: https://freehtml5.co
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: #000;
+}
+body .bg-img {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 100px;
+}
+.bg-img video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(92, 92, 92, 0.993), rgba(0, 0, 0, 0.171));
+  mix-blend-mode: overlay;
+}
+.overlay2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(31, 31, 31, 0.349), rgba(31, 31, 31, 0.349));
+  mix-blend-mode: overlay;
+}
+body nav {
+  background: rgba(27, 27, 27, 0.541);
+}
+body nav .navbar-nav a {
+  font-size: 17px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: #e4e4e4 !important;
+  font-weight: 500;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+body nav .navbar-nav .active {
+  color: #F3D920 !important;
+}
+.navbar-brand img{
+  width: 70px;
+}
+body nav .navbar-nav a:hover {
+  color: #F3D920 !important;
+}
+body nav .navbar-nav .btn-danger {
+  background: #ff8013;
+  border-color: #ff8013;
+  border-radius: 0;
+}
+body nav .navbar-nav .btn-danger:hover {
+  background: #df6700;
+  border-color: #df6700;
+}
+
+.header-banner-text-box {
+  position: relative;
+  max-height: 120px;
+  display: inline-block;
+  margin-top: 200px;
+}
+.header-banner-text-box2{
+  text-align: center;
+  /* max-height: 120px; */
+  margin-top: 150px;
+}
+.header-banner-text-box2 .quote-box,
+.header-banner-text-box .quote-box {
+  padding: 20px 0;
+  margin-top: -70px !important;
+}
+.header-banner-text-box .quote-box h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  color: #F3D920 !important;
+  -webkit-color: #F3D920 !important;
+  font-size: 80px;
+}
+.header-banner-text-box2 .quote-box h2{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #F3D920 !important;
+  -webkit-color: #F3D920 !important;
+  font-size: 40px;
+}
+.header-banner-text-box .quote-box span {
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 800;
+}
+.header-banner-text-box2 .quote-box h3{
+  color: #fff;
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+}
+.header-banner-text-box .quote-box p{
+  color: rgb(226, 226, 226);
+  width: 80%;
+}
+.header-banner-text-box a,
+.about-fitness-club .btn {
+  color: #fff;
+  border-color: #F3D920;
+  border-radius: 0;
+  min-width: 150px;
+}
+.header-banner-text-box a:hover,
+.about-fitness-club .btn:hover {
+  background: transparent;
+  border-color: #fff;
+  color: #F3D920;
+}
+
+/** Membership section (extra page) start **/
+.membership{
+  padding-left: 4%;
+  padding-right: 4%;
+  background: #292929;
+}
+.membership h2{
+  margin-top: 50px;
+  color: #F3D920 !important;
+  font-weight: 700;
+  font-size: 22px;
+}
+.membership p{
+  color: #D3D3D3 !important;
+  font-weight: 500;
+  font-size: 16px;
+}
+.membership li {
+  color: #D3D3D3;
+  list-style: none;
+}
+.fa-check-square{
+  color: #F3D920;
+}
+/** Enquiry Form start **/
+.membership .enquiry-section h2{
+  color: #F3D920 !important;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  font-size: 20px;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  padding: 10px 0px;
+  margin: 8px 0;
+  border: 1px solid #F3D920;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  border: 1px solid #fff;
+  color: #F3D920;
+}
+.enquiry-form {
+  padding: 20px;
+  padding-left: 0;
+  margin-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+}
+/** Enquiry Form end **/
+.membership-card{
+  padding: 30px;
+  background: transparent;
+  border: none;
+  box-shadow: 0 0 5px #000;
+  margin-bottom: 50px;
+}
+.membership-card .card-icon i{
+  font-size: 40px;
+  color: #F3D920;
+}
+.membership-card p {
+  margin-top: 20px;
+  font-size: 16px !important;
+  color: #fff;
+}
+/** Membership section (extra page) end **/
+
+
+/** About C3 fitness club **/
+.about-fitness-club, .fh5co-about-us {
+  background: #292929;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  padding: 50px 0;
+  padding-top: 30px;
+  border-top: 4px solid #F3D920;
+}
+.about-fitness-club .bounceInUp{
+  text-transform: uppercase;
+}
+.about-fitness-club h6{
+  font-size: 26px;
+}
+.about-fitness-club .carousel{
+  margin-top: -70px !important;
+}
+.about-gym-extra{
+  margin-top: 50px;
+}
+.about-fitness-club .about-gym-extra p{
+  color: #F3D920 !important;
+  font-weight: 800;
+  font-size: 17px;
+  font-style: italic;
+}
+.about-fitness-club h2, .fh5co-about-us h2 {
+  color: #ff8013;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.about-fitness-club h4{
+  color: #F3D920 !important;
+  font-weight: 700;
+  font-size: 35px;
+}
+.about-fitness-club p {
+  color: #e0e0e0 !important;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+.about-fitness-club li{
+  color: #e0e0e0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  list-style: none;
+  line-height: 2rem;
+}
+.about-fitness-club li i{
+  color: #F3D920 !important;
+}
+
+/** C3 Services section **/
+.services-gym {
+  padding: 5rem 0;
+  background: linear-gradient(rgba(0,0,0,0.6)0%, rgba(0,0,0,0.6)100%), url("../images/services-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background-attachment: fixed;
+}
+/* In GroupClasses page */
+.group-classes {
+  padding: 5rem 0;
+  background: #292929;
+  width: 100%;
+}
+/* In GroupClasses page */
+.services-gym h6{
+  color: #ccc;
+  font-size: 25px;
+}
+.services-gym h2{
+  font-size: 38px;
+  font-weight: 600;
+  color: #F3D920;
+  letter-spacing: 1px;
+}
+.class-thumb{
+  margin-bottom: 40px;
+  box-shadow: 0 0 6px #000;
+}
+.class-info {
+  background: #ccc;
+  box-shadow: 6px 0 38px rgba(20,20,20,0.10);
+  border-radius: 0 0 2px 2px;
+  padding: 1rem 2rem;
+  position: relative;
+}
+.class-info img {
+  border-radius: 2px 2px 0 0;
+}
+.class-info strong {
+  color: var(--gray-color);
+}
+.class-price {
+  background: #F3D920;
+  border-radius: 100%;
+  color: #000;
+  font-size: 13px;
+  font-weight: var(--font-weight-bold);
+  display: block;
+  position: absolute;
+  top: -2.3rem;
+  right: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  margin-top: 10px;
+}
+/** C3 Services section end **/
+
+
+/** Our trainer section start **/
+.spad {
+	padding-top: 100px;
+	padding-bottom: 100px;
+  background: #292929;
+}
+.team {
+	padding-bottom: 70px;
+}
+.team .section-title span{
+  color: #F3D920;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.team .section-title h2{
+  color: #ccc;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px !important;
+}
+.team.team--instructor {
+	padding-top: 70px;
+}
+
+.team__all {
+	text-align: right;
+}
+
+.team__item {
+	box-shadow: 0 0 5px #000;
+  border-left: 5px solid #F3D920;
+	overflow: hidden;
+	padding: 40px;
+	margin-bottom: 30px;
+}
+
+.team__item__img {
+	float: left;
+	margin-right: 30px;
+}
+.team__item__img img{
+  width: 200px;
+}
+.team__item__text {
+	overflow: hidden;
+}
+
+.team__item__text h5 {
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.team__item__text span {
+	font-size: 14px;
+	color: #F3D920;
+	display: block;
+	margin-bottom: 12px;
+}
+
+.team__item__text p {
+	font-size: 14px;
+	color: #ccc;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+.team__item__text .team__item__social a {
+	font-size: 16px;
+	color: #fff;
+	margin-right: 20px;
+}
+
+.team__item__text .team__item__social a:last-child {
+	margin-right: 0;
+}
+/** Our trainer section end **/
+
+
+/** Our testimonial section start **/
+.testimonial{
+  text-align: center;
+  background: #292929;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.testimonial h6{
+  color: #ccc;
+  font-size: 25px;
+}
+.testimonial h2{
+  font-size: 38px;
+  font-weight: 600;
+  color: #F3D920;
+  letter-spacing: 1px;
+}
+.testimonial-body{
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 0 7px rgb(173, 173, 173); */
+  overflow: hidden;
+}
+.swiper-container{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  background: #292929;
+  box-shadow: 0 0 10px #000;
+  filter: blur(4px);
+  border-radius: 10px;
+}
+.swiper-slide-active{
+  filter: blur(0px);
+  background: #292929;
+}
+.testimonial-box{
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  padding-top: 90px;
+  color: #fff;
+}
+.testimonial-box .quote{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  opacity: 0.9;
+  width: 40px;
+}
+.testimonial-box .testimonial-details{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.testimonial-content p{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300 !important;
+  text-align: left;
+}
+.testimonial-box .testimonial-details .test-img-box{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.testimonial-box .testimonial-details .test-img-box img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonial-box .testimonial-details h3{
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #F3D920;
+  line-height: 1.1em;
+  text-align: left;
+}
+.testimonial-box .testimonial-details h3 span{
+  font-size: 12px;
+  color: #ccc;
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+/** Our testimonial section end **/
+
+
+
+/** Extra C3 fitness club start **/
+.about-fitness-club figure, .extra-about-us figure {
+  text-align: center;
+}
+.extra-about-us {
+  padding-top: 30px;
+  background: linear-gradient(rgba(0,0,0,0.6)0%, rgba(0,0,0,0.6)100%), url("../images/services-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+}
+.extra-about-us h2{
+  color: #F3D920;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.extra-about-us p {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
+.extra-about-us a {
+  color: #fff !important;
+  border-color: #F3D920;
+  border-radius: 0;
+  min-width: 150px;
+}
+.extra-about-us a:hover {
+  background: transparent;
+  border-color: gray;
+  color: #ff8013;
+}
+
+
+/** Contact Section start **/
+.contact{
+  margin-top: 50px;
+}
+.contact h2{
+  color: #F3D920;
+  font-size: 35px;
+  font-weight: 700;
+}
+.lead{
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+}
+.contact-info i{
+  background: rgb(190, 190, 190);
+  width: 30px;
+  height: 30px;
+  color: #888;
+  text-align: center;
+  align-items: center;
+  padding-top: 6px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.webform input,
+  button#submit-button {
+    height: calc(2.25rem + 20px);
+  }
+  .form-control {
+    border-radius: 5px;
+    background: transparent;
+    margin: 1.3rem 0;
+    margin-bottom: 30px !important;
+    border: 2px solid #ccc;
+  }
+  .form-control:focus {
+    box-shadow: none;
+    background: transparent;
+    border: 2px solid #F3D920;
+  }
+  .contact-sec a {
+    background: transparent;
+    color: #fff !important;
+    border: 1px solid #F3D920;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .contact-sec a:hover {
+    background: transparent;
+    color: #F3D920 !important;
+    border: 1px solid #fff;
+  }
+  .contact h2 + p {
+    max-width: 90%;
+  }
+  .google-map {
+    margin-top: .5rem;
+    padding-top: 2.5rem;
+  }
+  .google-map iframe {
+    width: 100%;
+  }
+
+
+.fh5co-content-box {
+  background: #292929;
+  padding-bottom: 100px;
+}
+.fh5co-content-box .pr-0 img {
+  margin-top: -128px;
+}
+.fh5co-content-box img {
+  width: 100%;
+}
+.fh5co-content-box .card-img-overlay {
+  color: #fff;
+  text-align: center;
+  top: 35%;
+}
+
+footer {
+  background: #101011;
+  color: #fff;
+}
+footer .footer1 img{
+  margin-top: 20px;
+  width: 120px;
+}
+footer i{
+  color: #F3D920;
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+footer .me{
+  color: #D3D3D3 !important;
+  font-family: 'PT Sans Caption', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+footer .me .clr{
+  background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28) !important;
+  background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+footer .footer1 p {
+  margin-top: 10px;
+}
+footer .footer2 h5, 
+footer .footer3 h5{
+  color: #F3D920;
+}
+.footer2 .footer-nav-item li{
+  list-style: none;
+}
+.footer2 .footer-nav-item li a{
+  color: #fff !important;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400 !important;
+}
+footer .footer2,
+footer .footer3 {
+  padding-top: 50px;
+}
+footer .footer3 .social-links a {
+  background: #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  padding-top: 5px;
+}
+footer .footer3 .social-links a:hover {
+  background: #ff8013;
+}
+footer .footer3 .nav-item li {
+  margin: 0 5px;
+}
+footer .table td, footer .table th {
+  border: none;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  border: 3px solid #F3D920;
+  width: 100%;
+  left: 0;
+}
+
+@media (max-width: 1199px) {
+  .fh5co-content-box .pr-0 img {
+    margin-top: -107px;
+  }
+}
+@media (max-width: 991px) {
+  .fh5co-content-box .pr-0 img {
+    margin-top: -78px;
+  }
+  .fh5co-content-box .card-img-overlay {
+    top: 20%;
+  }
+}
+@media (max-width: 767px) {
+  body nav .navbar-nav {
+    margin-left: 0 !important;
+    max-width: 100%;
+  }
+  .header-banner-text-box .quote-box {
+    margin-top: -20px !important;
+  }
+  .header-banner-text-box .quote-box h2 {
+    font-weight: 800;
+    font-size: 40px;
+  }
+  .header-banner-text-box .quote-box span {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .header-banner-text-box .quote-box p{
+    color: rgb(226, 226, 226);
+    width: 100%;
+  }
+  .about-fitness-club .carousel{
+    margin-top: 0px !important;
+  }
+
+  .fh5co-content-box .pr-0 img {
+    margin: 20px auto;
+  }
+  .fh5co-content-box .col-md-5 {
+    padding: 0 !important;
+  }
+  .fh5co-content-box .col-md-7 {
+    padding: 0 !important;
+  }
+  .gallery .card {
+    margin-bottom: 25px;
+  }
+  .team__item__img {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.team__item__img img {
+		min-width: 100%;
+	}
+  .footer1 {
+    padding-top: 20px;
+  }
+
+  .footer2 .form-box {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  body nav .navbar-nav {
+    margin-left: 0 !important;
+    max-width: 100%;
+  }
+  .header-banner-text-box .quote-box h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+  }
+  .header-banner-text-box .quote-box span {
+    font-size: 24px;
+  }
+  .header-banner-text-box .quote-box {
+    margin-top: -140px !important;
+  }
+  .header-banner-text-box .quote-box p{
+    color: rgb(226, 226, 226);
+    width: 110%;
+  }
+  .team__item__img {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.team__item__img img {
+		min-width: 100%;
+	}
+}
